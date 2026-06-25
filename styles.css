@@ -1,0 +1,301 @@
+*{box-sizing:border-box}
+html,body{margin:0}
+::selection{background:#84B86C;color:#15180F}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.2}}
+
+body{
+  font-family:'Space Grotesk',sans-serif;
+  color:#ECE7D8;
+}
+
+.bg{
+  background-color:#15180F;
+  background-image:
+    linear-gradient(rgba(236,231,216,.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(236,231,216,.04) 1px, transparent 1px);
+  background-size:54px 54px;
+  min-height:100vh;
+}
+
+.container{
+  max-width:1180px;
+  margin:0 auto;
+  padding-left:40px;
+  padding-right:40px;
+}
+
+/* nav */
+.nav{
+  padding-top:30px;
+  padding-bottom:30px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.wordmark{
+  font-weight:700;
+  font-size:22px;
+  letter-spacing:-.01em;
+}
+.moss{color:#84B86C}
+
+/* hero */
+.hero{
+  padding-top:40px;
+  padding-bottom:70px;
+  display:grid;
+  grid-template-columns:1.05fr .95fr;
+  gap:72px;
+  align-items:center;
+  min-height:62vh;
+}
+.hero-left{max-width:580px}
+.eyebrow{
+  font-family:'IBM Plex Mono',monospace;
+  font-size:13px;
+  letter-spacing:.14em;
+  color:#84B86C;
+  text-transform:uppercase;
+  margin-bottom:28px;
+}
+h1{
+  font-size:80px;
+  line-height:.96;
+  letter-spacing:-.035em;
+  font-weight:600;
+  margin:0 0 28px;
+  text-wrap:balance;
+}
+.lede{
+  font-size:19px;
+  line-height:1.55;
+  color:rgba(236,231,216,.66);
+  margin:0 0 40px;
+  max-width:500px;
+}
+/* plot map */
+.plot-card{
+  border:1px solid rgba(236,231,216,.14);
+  border-radius:10px;
+  padding:30px;
+  background:rgba(236,231,216,.02);
+}
+.plot-card-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:baseline;
+  font-family:'IBM Plex Mono',monospace;
+  font-size:11.5px;
+  letter-spacing:.1em;
+  color:rgba(236,231,216,.5);
+  text-transform:uppercase;
+  margin-bottom:20px;
+}
+.plot-grid{
+  display:grid;
+  grid-template-columns:repeat(8,1fr);
+  gap:10px;
+}
+.plot-cell{
+  aspect-ratio:1;
+  border-radius:2px;
+}
+.plot-cell.grown{background:#84B86C}
+.plot-cell.empty{border:1px solid rgba(236,231,216,.13)}
+.plot-legend{
+  display:flex;
+  gap:24px;
+  margin-top:22px;
+  font-family:'IBM Plex Mono',monospace;
+  font-size:11px;
+  color:rgba(236,231,216,.5);
+}
+.plot-legend span{
+  display:flex;
+  align-items:center;
+  gap:8px;
+}
+.legend-swatch{
+  width:11px;
+  height:11px;
+  border-radius:2px;
+  display:inline-block;
+}
+.legend-filled{background:#84B86C}
+.legend-empty{border:1px solid rgba(236,231,216,.25)}
+
+/* pipeline */
+.pipeline-band{
+  border-top:1px solid rgba(236,231,216,.1);
+  border-bottom:1px solid rgba(236,231,216,.1);
+  background:rgba(236,231,216,.015);
+}
+.pipeline{
+  padding-top:50px;
+  padding-bottom:50px;
+}
+.section-label{
+  font-family:'IBM Plex Mono',monospace;
+  font-size:12px;
+  letter-spacing:.12em;
+  color:rgba(236,231,216,.5);
+  text-transform:uppercase;
+  margin-bottom:34px;
+}
+.pipeline-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:28px;
+}
+.stage{
+  border-left:1px solid rgba(236,231,216,.14);
+  padding-left:20px;
+}
+.stage-dots{
+  display:grid;
+  grid-template-columns:repeat(3,12px);
+  gap:5px;
+  margin-bottom:18px;
+}
+.dot{
+  width:12px;
+  height:12px;
+  border-radius:2px;
+}
+.dot.on{background:#84B86C}
+.dot.off{border:1px solid rgba(236,231,216,.18)}
+.stage-n{
+  font-family:'IBM Plex Mono',monospace;
+  font-size:12px;
+  color:#84B86C;
+  margin-bottom:8px;
+}
+.stage-title{
+  font-size:19px;
+  font-weight:600;
+  letter-spacing:-.01em;
+  margin-bottom:8px;
+}
+.stage-desc{
+  font-size:14px;
+  line-height:1.5;
+  color:rgba(236,231,216,.55);
+}
+
+/* thesis */
+.thesis{
+  padding-top:64px;
+  padding-bottom:40px;
+}
+.thesis h2{
+  font-size:38px;
+  font-weight:600;
+  letter-spacing:-.02em;
+  margin:0 0 44px;
+  max-width:680px;
+  text-wrap:balance;
+}
+.thesis-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:40px;
+}
+.pillar-n{
+  font-family:'IBM Plex Mono',monospace;
+  font-size:12px;
+  color:#84B86C;
+  margin-bottom:16px;
+}
+.pillar-title{
+  font-size:22px;
+  font-weight:600;
+  letter-spacing:-.01em;
+  margin-bottom:12px;
+}
+.pillar-desc{
+  font-size:15px;
+  line-height:1.6;
+  color:rgba(236,231,216,.6);
+}
+
+/* footer */
+.footer{
+  padding-top:50px;
+  padding-bottom:44px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:16px;
+  border-top:1px solid rgba(236,231,216,.1);
+  margin-top:30px;
+}
+.footer-wordmark{font-size:18px}
+.footer-meta{
+  font-family:'IBM Plex Mono',monospace;
+  font-size:11.5px;
+  letter-spacing:.06em;
+  color:rgba(236,231,216,.4);
+  text-transform:uppercase;
+  display:flex;
+  gap:24px;
+  flex-wrap:wrap;
+}
+
+/* tablet */
+@media (max-width: 899px){
+  .hero{
+    grid-template-columns:1fr;
+    gap:40px;
+    min-height:auto;
+  }
+  .pipeline-grid{
+    grid-template-columns:repeat(2,1fr);
+    gap:32px;
+  }
+  .thesis-grid{
+    grid-template-columns:1fr;
+    gap:36px;
+  }
+}
+
+/* mobile */
+@media (max-width: 639px){
+  .bg{background-size:48px 48px}
+  .container{padding-left:22px;padding-right:22px}
+
+  h1{font-size:40px;line-height:1.0;letter-spacing:-.03em}
+  .eyebrow{font-size:11px;letter-spacing:.12em}
+  .lede{font-size:15.5px;max-width:none}
+  .thesis h2{font-size:26px}
+
+  .nav{flex-wrap:wrap;gap:14px}
+
+  .hero{padding-top:30px;padding-bottom:50px}
+  .hero-left{max-width:none}
+
+  .plot-card{padding:20px}
+  .plot-grid{gap:7px}
+
+  .pipeline{padding:36px 0}
+  .pipeline-grid{grid-template-columns:1fr;gap:24px}
+  .stage{
+    display:grid;
+    grid-template-columns:auto 1fr;
+    gap:16px;
+    border-left:none;
+    padding-left:0;
+    border-left:1px solid rgba(236,231,216,.14);
+    padding-left:16px;
+  }
+  .stage-dots{margin-bottom:0}
+
+  .thesis{padding-top:44px}
+  .thesis-grid{gap:30px}
+  .pillar-title{font-size:18px}
+  .pillar-desc{font-size:14px}
+
+  .footer{flex-direction:column;align-items:flex-start}
+  .footer-wordmark{font-size:18px}
+  .footer-meta{font-size:10.5px;gap:16px}
+}
