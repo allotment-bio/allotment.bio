@@ -3,16 +3,16 @@
   const SCATTER_ORDER = [18, 19, 10, 27, 11, 26, 9, 20, 28, 12, 17, 35, 5, 34, 6, 13, 25, 36, 4, 21, 33, 14, 2, 29, 38, 7, 22, 31, 1, 15, 37, 8, 24, 30, 0, 16, 39, 3, 23, 32];
 
   const STAGES = [
-    { n: '01', title: 'New targets', desc: 'Detailed, multi-modal data surfaces the targets worth pursuing.', on: [0, 4] },
-    { n: '02', title: 'AI design', desc: 'We apply the best AI tools to design molecules and peptides for each target.', on: [0, 4, 1, 5] },
-    { n: '03', title: 'In-silico validation', desc: 'Predictive tools rank, refine and de-risk candidates before the bench.', on: [0, 4, 1, 5, 2, 8] },
-    { n: '04', title: 'Actionable leads', desc: 'Validated molecules and peptides, ready for partners to advance.', on: [0, 4, 1, 5, 2, 8, 3, 6, 7] },
+    { n: '01', title: 'Data strategy', desc: 'We audit and structure your biological data so it drives decisions, not just reports.', on: [0, 4] },
+    { n: '02', title: 'AI tooling', desc: 'We identify and implement the right AI tools for your targets — chosen for fit, not hype.', on: [0, 4, 1, 5] },
+    { n: '03', title: 'Computational discovery', desc: 'In-silico methods to surface, rank, and de-risk candidates before you commit to the bench.', on: [0, 4, 1, 5, 2, 8] },
+    { n: '04', title: 'Embedded support', desc: 'Hands-on expertise working alongside your team to advance programmes to the next decision point.', on: [0, 4, 1, 5, 2, 8, 3, 6, 7] },
   ];
 
   const PILLARS = [
-    { n: '01 — Data', title: 'Data at the root', desc: 'Detailed, multi-modal biological data built for decision-making, not decoration.' },
-    { n: '02 — AI', title: 'Best tool for the job', desc: 'We build where it counts and adopt the best AI elsewhere — chosen for the target, not the brand.' },
-    { n: '03 — Output', title: 'Actionable leads', desc: 'Every program ends in a validated lead, targeted against new biology.' },
+    { n: '01 — Biology', title: 'Biology first', desc: 'Deep biological understanding underpins every recommendation. AI amplifies — biology decides.' },
+    { n: '02 — AI', title: 'Best tool for the job', desc: 'We are tool-agnostic. The right AI for your target and your pipeline, not the trendiest model.' },
+    { n: '03 — Output', title: 'Outcomes, not decks', desc: 'Every engagement ends with something your team can act on — a decision, a candidate, a clear next step.' },
   ];
 
   function renderPlotGrid() {

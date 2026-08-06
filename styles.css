@@ -218,6 +218,37 @@ h1{
   color:rgba(236,231,216,.6);
 }
 
+/* cta */
+.cta-section{
+  padding-top:80px;
+  padding-bottom:80px;
+}
+.cta-inner{
+  border:1px solid rgba(236,231,216,.14);
+  border-radius:10px;
+  padding:56px 52px;
+  background:rgba(236,231,216,.02);
+}
+.cta-inner .eyebrow{margin-bottom:20px}
+.cta-text{
+  font-size:22px;
+  line-height:1.5;
+  color:rgba(236,231,216,.66);
+  margin:0 0 36px;
+  max-width:560px;
+}
+.cta-button{
+  display:inline-block;
+  font-family:'IBM Plex Mono',monospace;
+  font-size:14px;
+  color:#84B86C;
+  text-decoration:underline;
+  text-underline-offset:4px;
+  letter-spacing:.06em;
+  transition:opacity .15s ease;
+}
+.cta-button:hover{opacity:.75}
+
 /* footer */
 .footer{
   padding-top:50px;
